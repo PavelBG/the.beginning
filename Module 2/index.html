@@ -1,9 +1,148 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
 	<title>Module 2 Assignment</title>
+	<style>
+	
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+section {
+	border: 1px solid black;
+	background-color: #999999;
+	padding: 30px 10px 10px 10px;
+	margin-right: 20px;
+	margin-left: 20px;
+	margin-bottom: 20px;
+	font-family: Comic Sans MS;
+	font-size: 12px;
+	font-weight: bold;
+	}
+
+p {
+	border: 1px solid black;
+}
+
+#section1 {
+	position: relative;
+}
+
+#section2 {
+	position: relative;
+}
+
+#section3 {
+	position: relative;
+}
+
+#title1 {
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-color: #D59898;
+	font-size: 125%;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+#title2 {
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-color: #C14543;
+	font-size: 125%;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+#title3 {
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-color: #E5D198;
+	font-size: 125%;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+/* Simple Responsive Framework. */
+
+/********** Large devices only **********/
+@media (min-width: 992px) {
+  .col-lg-1, .col-lg-2, .col-lg-3 {
+    float: left;
+  }
+  .col-lg-1 {
+    width: 33.33%;
+  }
+  .col-lg-2 {
+    width: 33.33%;
+  }
+  .col-lg-3 {
+    width: 33.33%;
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-1, .col-md-2, .col-md-3 {
+    float: left;
+  }
+  .col-md-1 {
+    width: 50%;
+  }
+  .col-md-2 {
+    width: 50%;
+  }
+  .col-md-3 {
+    width: 100%;
+  }
+}
+
+/********** Small devices only **********/
+@media (max-width: 767px) {
+  .col-sm-1, .col-sm-2, .col-sm-3 {
+    float: left;
+  }
+  .col-sm-1 {
+    width: 100%;
+  }
+  .col-sm-2 {
+    width: 100%;
+  }
+  .col-sm-3 {
+    width: 100%;
+  }
+}
+
+	</style>
 </head>
 <body>
+
+<h1 style="font-family: Comic Sans MS; font-size: 175%; text-align: center; margin-top: 20px; margin-bottom: 50px">Our Menu</h1>
+
+<div class="col-lg-1 col-md-1 col-sm-1"><section id="section1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+<p id="title1">Chicken</p>
+</section>
+</div>
+
+<div class="col-lg-2 col-md-2 col-sm-2"> <section id="section2" >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+<p id="title2">Beef</p>
+</section>
+</div>
+
+<div class="col-lg-3 col-md-3 col-sm-3"> <section id="section3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+<p id="title3">Sushi</p>
+</section>
+</div>
 
 </body>
 </html>
